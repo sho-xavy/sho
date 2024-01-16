@@ -524,3 +524,70 @@ img{
   color: #fff;
   text-decoration: none;
 }
+@keyframes works-item-wrapper {
+  to {
+
+margin-left:50%;
+}
+
+}
+/* 追加・修正した部分 */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  /* ナビゲーションバー */
+  .gro-navi {
+    width: 100%;
+    position: static;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1.5em;
+  }
+
+  .gro-navi .nav-inner {
+    padding-left: 0;
+    border-left: none;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gro-navi .nav-ttl,
+  .gro-navi .nav-item {
+    position: static;
+    top: auto;
+  }
+
+  .gro-navi .nav-item li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* コンテンツセクションのスタイル調整 */
+  section {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  section p {
+    font-size: 16px;
+  }
+
+  /* Worksページのスタイル調整 */
+  #WorksContainer .works-item {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  #WorksContainer .works-item:not(:first-of-type) {
+    margin-left: 0;
+  }
+
+  #WorksContainer .works-item-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Worksページの横スクロールを追加 */
+    white-space: nowrap; /* Worksページの横スクロールを追加 */
+  }
+}
